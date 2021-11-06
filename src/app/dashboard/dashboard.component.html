@@ -1,0 +1,19 @@
+<h1>dashboard works!</h1>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header">Customers</div>
+        <div class="card-body"><app-consolidated [customerp]="customers_parent" (customerSelected)="selected($event)"></app-consolidated></div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header">Detail</div>
+        <div class="card-body"><app-customer-detail [customer]="customer_parent"></app-customer-detail></div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,10 @@
+<table class="table table-striped table-hover">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let emp of employees" (click)="selectEmployee(emp)">
+    <td class="pointer">{{ emp.name }}</td>
+    <td class="pointer">{{ emp.email }}</td>
+  </tr>
+</table>
